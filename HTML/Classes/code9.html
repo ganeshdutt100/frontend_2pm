@@ -4,11 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>form</title>
 </head>
 
 <body>
+    <form>
+        <fieldset>
+            <legend>Form</legend>
+            <fieldset>
+                <legend>Basic Info</legend>
+                <label>Enter your name : </label>
+                <input type="text"> <br> <br>
+                <label>Enter your Email : </label>
+                <input type="email" autofocus><br> <br>
+                <label>Enter your Password : </label>
+                <input type="password"><br> <br>
+                <label>Enter your contact No. : </label>
+                <input type="number"><br> <br>
+                <label>Enter your DOB : </label>
+                <input type="date"><br> <br>
+                <label>Enter your Class time : </label>
+                <input type="time"><br> <br>
+                <label>Enter your Class time and date : </label>
+                <input type="datetime-local"><br> <br>
 
+                <label>Gender: </label>
+                <input type="radio" name="gender"> male
+                <input type="radio" name="gender">female
+                <input type="radio" name="gender">others
+
+                <br> <br>
+
+                <textarea name="" rows="5" cols="10" id=""></textarea>
+            </fieldset>
+            <fieldset>
+                <label>Skills : </label>
+                <input type="checkbox"> HTMl
+                <input type="checkbox"> CSS
+                <input type="checkbox"> JS
+                <input type="checkbox"> React
+                <input type="checkbox"> Tailwind
+                <input type="checkbox"> Bootstrap
+                <input type="checkbox"> Node
+                <input type="checkbox"> Express
+                <input type="checkbox"> EJS
+                <input type="checkbox"> Java
+                <input type="checkbox"> Python
+                <br> <br>
+                <input type="file"> <br>
+                <input type="color"> <br>
+                <input type="range"> <br>
+                <input type="hidden"> <br>
+                <input type="search"> <br>
+
+            </fieldset>
+
+            <fieldset>
+                <input type="text" value="Ganesh Dutt">
+                <input type="text" value="readonly" readonly>
+                <input type="text" value="disabled" disabled>
+                <input type="text" placeholder="placeholder" required>
+
+                <input type="text" maxlength="11">
+                <input type="number" min="2" max="10">
+                <input type="number" step="3">
+                <input type="text" size="1" placeholder="size">
+
+
+                <select>
+                    <option>Mathura</option>
+                    <option>Delhi</option>
+                    <option>Noida</option>
+                    <option>Dehradun</option>
+                </select>
+
+                <details>
+                    <summary>Form Details</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam doloremque optio enim perspiciatis
+                        maxime culpa possimus minus. Aliquam, eum molestiae sit id saepe ipsum, voluptates illum,
+                        voluptas
+                        at molestias quam.</p>
+                </details>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+            <input type="reset">
+        </fieldset>
+
+    </form>
 </body>
 
 </html>
