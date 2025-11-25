@@ -19,10 +19,12 @@
             color: white;
             border-radius: 40px;
             margin: 20px;
+            font-family: sans-serif;
         }
 
         .logo {
             /* background-color: lightsalmon; */
+            font-weight: bold;
         }
 
         .list {
@@ -30,6 +32,67 @@
             display: flex;
             gap: 20px;
             list-style: none;
+        }
+
+        .list li:hover {
+            color: tomato;
+            cursor: pointer;
+            /* cursor: wait;
+            cursor: cell; */
+        }
+
+        .heroSection {
+
+            display: flex;
+            margin: 10px;
+        }
+
+        .text {
+            margin-top: 40px;
+            font-family: sans-serif;
+
+        }
+
+        .text h1 {
+            margin-bottom: 10px;
+        }
+
+        .text p {
+            margin-bottom: 20px;
+            line-height: 1.3;
+            color: rgb(39, 38, 38);
+        }
+
+        .btn {
+            background-color: rgb(39, 38, 38);
+
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .btn:hover {
+            background-color: rgb(4, 60, 78);
+
+            cursor: pointer;
+        }
+
+        .btn:active {
+            color: red;
+        }
+
+        .heroSection img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            transition: all .3s linear;
+
+
+        }
+
+        .heroSection img:hover {
+            box-shadow: 1px 5px 30px 20px rgba(0, 0, 0, 0.228);
         }
     </style>
 </head>
@@ -44,6 +107,16 @@
             <li>Services</li>
         </ul>
     </nav>
+    <section class="heroSection">
+        <div class="text">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis porro est beatae, earum optio sed amet
+                voluptatum a numquam tempora provident. Alias iusto praesentium laborum assumenda iste. Dolorem, rem
+                quas.</p>
+            <button class="btn">Click me</button>
+        </div>
+        <img src="../images/Screenshot 2025-10-09 171806.png" alt="">
+    </section>
 </body>
 
 </html>
