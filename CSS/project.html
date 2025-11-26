@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: rgb(3, 38, 67);
+            color: white;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.505);
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            font-family: sans-serif;
+            padding: 15px;
+            border-radius: 30px;
+            /* margin: 10px; */
+            position: fixed;
+            backdrop-filter: blur(20px);
+            margin-left: 10px;
+            width: 90%;
+
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: rgb(255, 153, 0);
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .login {
+            background-color: rgb(250, 151, 2);
+            color: white;
+            border-radius: 20px;
+            margin-top: -10px;
+            padding: 10px 20px;
+            border: none;
+        }
+
+        /* heroSection */
+        .heroSection {
+            padding-top: 100px;
+            display: flex;
+            gap: 30px;
+            margin: 20px;
+        }
+
+        .heroSectionText {
+            font-family: sans-serif;
+        }
+
+        .heroSectionText p {
+            margin: 15px 0;
+            font-family: monospace;
+            line-height: 1.6;
+            letter-spacing: 1.3px;
+
+        }
+
+        .heroSectionImg {
+            width: 300px;
+            border-radius: 20px;
+        }
+
+        /* section2 */
+        .section2 {
+            margin: 20px;
+        }
+
+        .headingBox {}
+
+        .heading {
+
+            text-align: center;
+        }
+
+        .empty {
+            width: 300px;
+            height: 3px;
+            background-color: tomato;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+
+
+        .cards {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            width: 250px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.263);
+            padding: 20px;
+            border-radius: 20px;
+            position: relative;
+
+
+        }
+
+        .ball {
+            width: 150px;
+            height: 150px;
+            background-color: tomato;
+            border-radius: 50%;
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            z-index: -1;
+            filter: blur(35px);
+        }
+
+        .ball2 {
+            background-color: rgb(105, 106, 104);
+
+        }
+
+        .imgIcon {
+            width: 100px;
+        }
+
+        .cardPara {
+            font-family: monospace;
+            line-height: 1.4;
+        }
+
+        /* .section3 */
+        .heroSection1 {
+            flex-direction: row-reverse;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Ganesh <span>Dutt</span></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Project</a></li>
+        </ul>
+        <button class="login">Login</button>
+    </nav>
+    <!-- heroSection -->
+
+    <div class="heroSection">
+        <img src="../images/Screenshot 2025-10-09 171238 - Copy.png" alt="" class="heroSectionImg">
+        <div class="heroSectionText">
+            <h1>Lorem ipsum </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nostrum porro necessitatibus adipisci
+                quo doloribus sequi neque nam voluptas. Atque ut hic odio aliquid nobis sed sapiente, ex ad fuga.</p>
+            <button class="login btn">Click me </button>
+        </div>
+    </div>
+
+    <div class="section2">
+        <div class="headingBox">
+            <h1 class="heading">Lorem ipsum dolor sit.</h1>
+            <div class="empty">
+            </div>
+        </div>
+
+
+        <div class="cards">
+            <div class="card card1">
+                <img src="https://ganeshdutt.netlify.app/developer2.png" alt="" class="imgIcon">
+
+                <div class="ball">
+
+                </div>
+
+                <p class="cardPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cupiditate alias ab
+                    corporis vitae
+                    facilis placeat reprehenderit beatae aliquid? Earum veniam beatae maxime perspiciatis sint minus
+                    officia quas, sapiente asperiores.</p>
+            </div>
+            <div class="card card2">
+                <img src="https://ganeshdutt.netlify.app/developer.webp" alt="" class="imgIcon">
+
+                <div class="ball ball2">
+
+                </div>
+
+                <p class="cardPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cupiditate alias ab
+                    corporis vitae
+                    facilis placeat reprehenderit beatae aliquid? Earum veniam beatae maxime perspiciatis sint minus
+                    officia quas, sapiente asperiores.</p>
+            </div>
+            <div class="card card3">
+                <img src="https://ganeshdutt.netlify.app/developer2.png" alt="" class="imgIcon">
+
+                <div class="ball">
+
+                </div>
+
+                <p class="cardPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cupiditate alias ab
+                    corporis vitae
+                    facilis placeat reprehenderit beatae aliquid? Earum veniam beatae maxime perspiciatis sint minus
+                    officia quas, sapiente asperiores.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="section3">
+        <div class="headingBox">
+            <h1 class="heading">Lorem ipsum dolor sit.</h1>
+            <div class="empty">
+            </div>
+        </div>
+
+
+        <div class="heroSection heroSection1">
+            <img src="https://ganeshdutt.netlify.app/newImgGanesh2.jpg" alt="" class="heroSectionImg">
+            <div class="heroSectionText">
+                <h1>Lorem ipsum </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nostrum porro necessitatibus
+                    adipisci
+                    quo doloribus sequi neque nam voluptas. Atque ut hic odio aliquid nobis sed sapiente, ex ad fuga.
+                </p>
+                <button class="login btn">Click me </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
