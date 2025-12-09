@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: serif
+        }
+
+        .headerNavbar {
+            background-image: url(https://themewagon.github.io/foody2/img/carousel-2.jpg);
+            height: 100vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+
+        }
+
+        .nav1 {
+            display: none;
+            justify-content: space-between;
+            padding: 48px;
+            gap: 20px;
+        }
+
+        .icon {
+            word-spacing: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            ;
+            padding: 0 48px;
+            align-items: center;
+        }
+
+        .list {
+            display: none;
+            list-style: none;
+            gap: 40px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+
+
+
+
+
+
+        /* Hero Section */
+        .hero {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* padding: 200px; */
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hero-text h1 {
+            /* font-size: 64px; */
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 40px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 15px 45px;
+            font-size: 18px;
+            border-radius: 50px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .green {
+            background: #42b51d;
+        }
+
+        .orange {
+            background: #ff5722;
+        }
+
+        /* SECOND SECTION */
+
+        .organic-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            /* justify-content: space-between; */
+            /* padding: 60px 90px; */
+        }
+
+        /* Image */
+        .image-box img {
+            width: 300px;
+            border-radius: 8px;
+        }
+
+        /* Right Content */
+        .content-box {
+            width: 50%;
+        }
+
+
+
+
+
+
+
+        .content-box h1 {
+            /* font-size: 50px; */
+            font-weight: 800;
+            margin-bottom: 25px;
+            line-height: 1.2;
+        }
+
+        .content-box p {
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        /* Checklist */
+        .check-list {
+            list-style: none;
+            margin-bottom: 20px;
+
+        }
+
+        .check-list li {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .check-list li {
+            margin-right: 12px;
+            color: #33c100;
+            font-weight: 900;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 16px 45px;
+            background: #33c100;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+
+        /* SECTION3 */
+        /* Section */
+        .features-section {
+            text-align: center;
+            padding: 80px 50px;
+            background-color: #F7F8FC;
+            background-image: url(../image/bg-icon.png);
+            background-size: contain;
+        }
+
+        /* Title */
+        .title h2 {
+            font-size: 45px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .title p {
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 50px;
+            line-height: 1.7;
+        }
+
+        .line1 {
+            width: 60px;
+            height: 2px;
+            background-color: green;
+            margin: 0 auto 10px;
+            border-radius: 10px;
+        }
+
+        .line {
+            width: 90px;
+            height: 2px;
+            background-color: red;
+            margin: 0 auto 12px;
+            border-radius: 10px;
+        }
+
+        /* Feature Boxes */
+
+        .features-box {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            background: #fff;
+            width: 330px;
+            padding: 45px 30px;
+            border-radius: 8px;
+        }
+
+
+
+        .feature-card i {
+            font-size: 60px;
+            color: #33c100;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 23px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 10px 28px;
+            border: 2px solid #33c100;
+            color: white;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+
+
+        /* SECTION */
+        .products-section {
+            padding: 60px 80px;
+        }
+
+        /* Heading */
+        .heading-area {
+            max-width: 550px;
+            margin-bottom: 30px;
+        }
+
+        .line2 {
+            width: 60px;
+            height: 2px;
+            background-color: green;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .line4 {
+            width: 90px;
+            height: 2px;
+            background-color: red;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+
+
+        .heading-area h1 {
+            font-size: 50px;
+            font-weight: 800;
+            margin-bottom: 14px;
+        }
+
+        .heading-area p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Category Buttons */
+        .category-buttons {
+            text-align: right;
+            margin-bottom: 35px;
+        }
+
+        .category-buttons button {
+            border: 2px solid #32cd32;
+            background: #fff;
+            padding: 7px 20px;
+            border-radius: 6px;
+            margin-left: 8px;
+        }
+
+        .category-buttons .active {
+            background: #32cd32;
+            color: #fff;
+        }
+
+        /* ===== SECTION STYLE ===== */
+        .visit-section {
+            background: #36b52e;
+            background-image: url(../image/bg-icon.png);
+            background-size: ;
+            color: white;
+            padding: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        /* left text area */
+        .visit-text {
+            max-width: 60%;
+        }
+
+        .visit-text h2 {
+            font-size: 55px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .visit-text p {
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        /* button */
+        .visit-btn {
+            background: #ff6600;
+            color: white;
+            font-size: 22px;
+            padding: 20px 45px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+
+        }
+
+
+        @media only screen and (min-width:500px) {
+            .nav1 {
+                display: flex;
+            }
+
+            .hero-text h1 {
+                font-size: 40px;
+                font-family: sans-serif;
+            }
+        }
+
+        @media only screen and (min-width:700px) {
+            .organic-section {
+                padding: 10px;
+                flex-direction: row;
+                text-align: start;
+                gap: 20px;
+            }
+
+            .organic-section img {
+                width: 400px;
+            }
+
+        }
+
+        @media only screen and (min-width:900px) {
+            .list {
+                display: flex;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="headerNavbar">
+        <div class="nav1">
+            <div>
+                <i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA
+
+                <i class="fa fa-envelope me-2" style="padding-left: 20px;"></i>info@example.com
+            </div>
+
+            <div class="icons">
+                <span>Follow us:</span>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+
+        <nav>
+            <div>
+                <h1 class="logo">Foody</h1>
+            </div>
+
+            <ul class="list">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Community</li>
+                <li>Pricing</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+                <div class="icon">
+                    <i class="fa fa-search text-body"></i>
+                    <i class="fa fa-user text-body"></i>
+                    <i class="fa fa-shopping-bag text-body"></i>
+                </div>
+            </ul>
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </nav>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Organic Food Is Good<br>For Health</h1>
+
+                <div class="buttons">
+                    <a href="#" class="btn green">Products</a>
+                    <a href="#" class="btn orange">Services</a>
+                </div>
+            </div>
+        </section>
+        <!-- SECOND SECTION   -->
+
+        <section class="organic-section">
+
+            <div class="image-box">
+                <img src="https://themewagon.github.io/foody2/img/about.jpg" alt="">
+            </div>
+
+            <div class="content-box">
+                <h1>Best Organic Fruits<br>And Vegetables</h1>
+
+                <p>
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+                    Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                </p>
+
+                <div class="check-list">
+                    <li class="fa fa-check text-primary mr-3"></li>Tempor erat elitr rebum at clita
+                </div>
+                <div class="check-list">
+                    <li class="fa fa-check text-primary mr-3"></li>Aliqu diam amet diam et eos
+                </div>
+                <div class="check-list">
+                    <li class="fa fa-check text-primary mr-3"></li> Clita duo justo magna dolore erat amet
+                </div>
+
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+        </section>
+
+        <!-- section3 -->
+
+        <section class="features-section">
+
+            <div class="title">
+                <div class="line1"></div>
+                <div class="line"></div>
+                <h2>Our Features</h2>
+                <p>
+                    Tempor ut dolore lorem kasd vero ipsum sit eirmod sit.
+                    Ipsum diam justo sed rebum vero dolor duo.
+                </p>
+            </div>
+
+            <div class="features-box">
+
+                <div class="feature-card">
+                    <img src="https://themewagon.github.io/foody2/img/icon-1.png">
+                    <h3>Natural Process</h3>
+                    <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
+                    <a class="btn">Read More</a>
+                </div>
+
+
+                <div class="feature-card">
+                    <img src="https://themewagon.github.io/foody2/img/icon-1.png">
+                    <h3>Organic Products</h3>
+                    <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+
+
+                <div class="feature-card">
+                    <img src="https://themewagon.github.io/foody2/img/icon-1.png">
+                    <h3>Biologically Safe</h3>
+                    <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="products-section">
+
+            <div class="heading-area">
+                <div class="line2"></div>
+                <div class="line4"></div>
+                <h1>Our Products</h1>
+                <p>
+                    Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum
+                    diam justo sed rebum vero dolor duo.
+                </p>
+            </div>
+
+
+            <div class="category-buttons">
+                <button class="active">Vegetable</button>
+                <button>Fruits</button>
+                <button>Fresh</button>
+            </div>
+        </section>
+
+
+        <section class="visit-section">
+
+            <div class="visit-text">
+                <h2>Visit Our Firm</h2>
+                <p>
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                    Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                    sed stet lorem sit clita duo justo magna dolore erat amet.
+                    Diam dolor diam amet diam et eos.
+                </p>
+            </div>
+
+            <a href="#" class="visit-btn">Visit Now</a>
+
+        </section>
+
+
+
+        <section class="features-section">
+
+            <div class="title">
+                <div class="line1"></div>
+                <div class="line"></div>
+                <h2>Customer Review</h2>
+                <p>
+                    Tempor ut dolore lorem kasd vero ipsum sit eirmod sit.
+                    Ipsum diam justo sed rebum vero dolor duo.
+                </p>
+            </div>
+
+
+            <div class="test-card">
+
+                <p>
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
+                    Clita erat ipsum et lorem et sit.
+                </p>
+                <div class="client">
+                    <img src="" alt="">
+                    <div>
+                        <h4>Client Name</h4>
+                        <small>Profession</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test-card active">
+
+                <p>
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
+                    Clita erat ipsum et lorem et sit.
+                </p>
+                <div class="client">
+                    <img src="" alt="">
+                    <div>
+                        <h4>Client Name</h4>
+                        <small>Profession</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test-card">
+
+                <p>
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
+                    Clita erat ipsum et lorem et sit.
+                </p>
+                <div class="client">
+                    <img src="" alt="">
+                    <div>
+                        <h4>Client Name</h4>
+                        <small>Profession</small>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+</body>
+
+</html>

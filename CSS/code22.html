@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-image: url('../images/Screenshot 2025-10-09 171647.png');
+            background-size: cover;
+            border-radius: 20px;
+
+
+            animation: box 10s linear infinite alternate;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+
+        @keyframes box {
+            0% {
+                background-image: url('../images/Screenshot\ 2025-10-09\ 171538\ -\ Copy.png');
+
+            }
+
+            25% {
+                background-image: url('../images/Screenshot\ 2025-10-09\ 171132.png');
+
+            }
+
+            50% {
+                background-image: url('../images/Screenshot\ 2025-10-09\ 171806.png');
+
+            }
+
+            75% {
+                background-image: url('../images/Screenshot\ 2025-10-09\ 171132\ -\ Copy.png');
+
+            }
+
+            100% {
+                background-image: url('../images/Screenshot 2025-10-09 171647.png');
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
