@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            /* background-color: red; */
+            /* border: 2px solid black; */
+            /* border-top-color: white; */
+            /* animation: bounce 1s infinite alternate; */
+            animation: loader 1s infinite linear;
+        }
+
+        .heart {
+            font-size: 200px;
+            animation: heart 1s infinite linear alternate;
+            margin-left: 100px;
+
+
+        }
+
+        @keyframes heart {
+
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.5);
+            }
+
+            /* 0% {
+                transform: translateY(0px);
+            }
+
+            100% {
+                transform: translateY(200px);
+            } */
+
+
+            /* from {
+                transform: translateY(0px);
+            }
+
+            to {
+                transform: translateY(200px);
+            } */
+            /* from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+        } */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+    </div>
+
+
+    <div class="heart">💖</div>
+
+</body>
+
+</html>
